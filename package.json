@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/pujunjie/react-project-demo#readme",
   "dependencies": {
-    "immer": "^8.0.0"
+    "axios": "^0.21.1",
+    "immer": "^8.0.0",
+    "monent": "^2.0.0"
   }
 }
