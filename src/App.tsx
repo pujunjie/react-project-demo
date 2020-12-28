@@ -1,16 +1,16 @@
-import React, { Suspense } from "react";
-import { BrowserRouter } from "react-router-dom";
-import { renderRoutes } from "react-router-config";
-import { Provider } from "react-redux";
+import React, { Suspense } from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import { renderRoutes } from 'react-router-config';
 
-import { routes } from "./route/route";
-import store from "./store/store";
+import store from './redux/store';
+import Route from './route/route';
 
 function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Suspense fallback={null}>{renderRoutes(routes)}</Suspense>
+        <Suspense fallback={null}>{renderRoutes(Route)}</Suspense>
       </BrowserRouter>
     </Provider>
   );
